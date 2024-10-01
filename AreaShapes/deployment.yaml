@@ -1,0 +1,61 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: web-app # имя приложения
+  labels:
+    app: web-app # метка идентификации приложения
+spec:
+  replicas: 3 # количество подов
+  selector:
+    matchLabels:
+      app: web-app # выбор подов по метке приложения
+  template:
+    metadata:
+      labels:
+        app: web-app # метка подов
+    spec:
+      affinity: # настройки для размещения подов
+        podAntiAffinity: # поды не будут размещаться на одном ноде
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: app
+                    operator: In
+                    values:
+                      - web-app
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: web-app-container
+          image: web-app-image:latest # образ контейнера
+          resources:
+            requests:
+              cpu: "0.1" # запрос на 0.1 CPU
+              memory: "128Mi" # запрос на 128Mi памяти
+            limits:
+              cpu: "1" # лимит на 1 CPU
+              memory: "128Mi" # лимит на 128Mi памяти
+          startupProbe: # проверки инициализации пода
+            httpGet:
+              path: /health # путь для проверки
+              port: 80
+            initialDelaySeconds: 10 # 10 секунд перед первой проверкой
+            periodSeconds: 5 # проверка каждые 5 секунд
+            failureThreshold: 5 # если 5 раз подряд неудачно, под считается не готовым
+          readinessProbe: # проверка готовности
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 5
+            failureThreshold: 3
+---
+apiVersion: v1
+kind: Service # доступ к подам
+metadata:
+  name: web-app-service
+spec:
+  ports:
+    - port: 80 # порт, на котором работает приложение
+      targetPort: 80 # порт контейнера
+  selector:
+    app: web-app # селектор для маршрутизации трафика к подам

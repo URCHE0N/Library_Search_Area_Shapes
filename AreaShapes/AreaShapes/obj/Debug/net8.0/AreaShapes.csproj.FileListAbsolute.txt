@@ -1,0 +1,11 @@
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\bin\Debug\net8.0\AreaShapes.deps.json
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\bin\Debug\net8.0\AreaShapes.dll
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\bin\Debug\net8.0\AreaShapes.pdb
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\AreaShapes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\AreaShapes.AssemblyInfoInputs.cache
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\AreaShapes.AssemblyInfo.cs
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\AreaShapes.csproj.CoreCompileInputs.cache
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\AreaShapes.dll
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\refint\AreaShapes.dll
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\AreaShapes.pdb
+C:\Users\Yashnov\Desktop\ErrAr\всякое\Работа\AreaShapes\AreaShapes\obj\Debug\net8.0\ref\AreaShapes.dll
