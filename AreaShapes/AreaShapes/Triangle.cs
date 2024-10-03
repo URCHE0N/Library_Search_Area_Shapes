@@ -21,7 +21,7 @@
             return Math.Round(Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c)), 5);
         }
 
-        public string CheckRightTriangle()
+        public bool CheckRightTriangle()
         {
             double[] sides = [_a, _b, _c];
             Array.Sort(sides);
@@ -29,9 +29,9 @@
             double smallSide = (Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2));
             if (bigSide == smallSide)
             {
-                return "прямоугольный";
+                return true;
             }
-            return "не прямоугольный";
+            return false;
         }
     }
 }

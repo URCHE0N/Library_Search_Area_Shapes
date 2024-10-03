@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\AreaShapes\\AreaShapes\\AreaShapes.csproj": {}
+    "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\Library_Search_Area_Shapes\\AreaShapes\\AreaShapes\\AreaShapes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\AreaShapes\\AreaShapes\\AreaShapes.csproj": {
+    "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\Library_Search_Area_Shapes\\AreaShapes\\AreaShapes\\AreaShapes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\AreaShapes\\AreaShapes\\AreaShapes.csproj",
+        "projectUniqueName": "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\Library_Search_Area_Shapes\\AreaShapes\\AreaShapes\\AreaShapes.csproj",
         "projectName": "AreaShapes",
-        "projectPath": "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\AreaShapes\\AreaShapes\\AreaShapes.csproj",
+        "projectPath": "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\Library_Search_Area_Shapes\\AreaShapes\\AreaShapes\\AreaShapes.csproj",
         "packagesPath": "C:\\Users\\Yashnov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\AreaShapes\\AreaShapes\\obj\\",
+        "outputPath": "C:\\Users\\Yashnov\\Desktop\\ErrAr\\всякое\\Работа\\Library_Search_Area_Shapes\\AreaShapes\\AreaShapes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

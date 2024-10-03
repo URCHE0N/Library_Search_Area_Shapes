@@ -30,9 +30,9 @@
         public void CheckRightTriangle_25_7_24_True()
         {
             IFigure triangle = new Triangle(25, 7, 24);
-            string expectedRightTriangle = "прямоугольный";
+            bool expectedRightTriangle = true;
 
-            string actualRightTriangle = ((Triangle)triangle).CheckRightTriangle();
+            bool actualRightTriangle = ((Triangle)triangle).CheckRightTriangle();
 
             Assert.That(expectedRightTriangle, Is.EqualTo(actualRightTriangle));
         }
@@ -41,33 +41,33 @@
         public void CheckRightTriangle_5_4_2_False()
         {
             IFigure triangle = new Triangle(5, 4, 2);
-            string expectedRightTriangle = "прямоугольный";
+            bool expectedRightTriangle = true;
 
-            string actualRightTriangle = ((Triangle)triangle).CheckRightTriangle();
+            bool actualRightTriangle = ((Triangle)triangle).CheckRightTriangle();
 
             Assert.That(expectedRightTriangle, Is.Not.EqualTo(actualRightTriangle));
         }
 
         [Test]
-        public void Sides_Negative_Value_True()
+        public void Sides_Negative_Value__Exception_True()
         {
             Assert.Throws<ArgumentException>(() => new Triangle(-25, 8, -20));
         }
 
         [Test]
-        public void Sides_NonNegative_Value_True()
+        public void Sides_NonNegative_Value__Exception_True()
         {
             Assert.DoesNotThrow(() => new Triangle(25, 8, 20));
         }
 
         [Test]
-        public void Sides_NotForm_Triangle_True()
+        public void Sides_NotForm_Triangle__Exception_True()
         {
             Assert.Throws<ArgumentException>(() => new Triangle(1, 2, 3));
         }
 
         [Test]
-        public void Sides_Form_Triangle_Tru()
+        public void Sides_Form_Triangle__Exception_True()
         {
             Assert.DoesNotThrow(() => new Triangle(3, 3, 5));
         }

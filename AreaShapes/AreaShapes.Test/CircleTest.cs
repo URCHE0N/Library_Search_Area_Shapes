@@ -16,14 +16,9 @@ namespace AreaShapes.Tests
         }
 
         [Test]
-        public void Area_Minus2AHalf_NotEqualTo_18_True()
+        public void Area_Minus2AHalf_Exception_True()
         {
-            IFigure circle = new Circle(-2.5);
-            double expectedArea = 18;
-
-            double actualArea = areaCalculate.Calculate(circle);
-
-            Assert.That(expectedArea, Is.Not.EqualTo(actualArea));
+            Assert.Throws<ArgumentException>(() => new Circle(-2.5));
         }
     }
 }

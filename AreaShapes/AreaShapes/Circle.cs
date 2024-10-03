@@ -6,6 +6,8 @@
 
         public Circle(double radius)
         {
+            if (radius <= 0)
+                throw new ArgumentException("Введенные данные равны нулю или отрицательные!");
             _radius = radius;
         }
 
